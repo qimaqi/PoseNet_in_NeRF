@@ -1,23 +1,23 @@
 Installation
 ============
 
-**my-package** supports Python >= 3.8.
+**posenet-in-nerf** supports Python >= 3.8.
 
 ## Installing with `pip`
 
-**my-package** is available [on PyPI](https://pypi.org/project/my-package/). Just run
+**posenet-in-nerf** is available [on PyPI](https://pypi.org/project/posenet-in-nerf/). Just run
 
 ```bash
-pip install my-package
+pip install posenet-in-nerf
 ```
 
 ## Installing from source
 
-To install **my-package** from source, first clone [the repository](https://github.com/allenai/python-package-template):
+To install **posenet-in-nerf** from source, first clone [the repository](https://github.com/qimaqi/PoseNet_in_NeRF):
 
 ```bash
-git clone https://github.com/allenai/python-package-template.git
-cd python-package-template
+git clone https://github.com/qimaqi/PoseNet_in_NeRF.git
+cd PoseNet_in_NeRF
 ```
 
 Then run
