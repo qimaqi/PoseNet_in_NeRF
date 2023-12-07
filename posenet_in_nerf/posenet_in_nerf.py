@@ -77,9 +77,12 @@ class TransNet(torch.nn.Module):
         L = list(zip(layers_list[:-1],layers_list[1:]))  
 
         for li,(k_in,k_out) in enumerate(L):
-            if li==0: k_in = self.input_t_dim
-            if li in cfg['skip'] : k_in += self.input_t_dim
-            if li==len(L)-1: k_out = 3
+            if li==0: 
+                k_in = self.input_t_dim
+            if li in cfg['skip'] :
+                k_in += self.input_t_dim
+            if li==len(L)-1: 
+                k_out = 3
             linear = torch.nn.Linear(k_in,k_out)
             self.initialize_weights(linear,out="small" if li==len(L)-1 else "all")
             self.mlp_transnet.append(linear)
@@ -140,9 +143,12 @@ class RotsNet(torch.nn.Module):
 
         self.mlp_quad = torch.nn.ModuleList()
         for li,(k_in,k_out) in enumerate(L):
-            if li==0: k_in = self.input_t_dim
-            if li in cfg['skip']: k_in += self.input_t_dim
-            if li==len(L)-1: k_out = 4 
+            if li==0: 
+                k_in = self.input_t_dim
+            if li in cfg['skip']: 
+                k_in += self.input_t_dim
+            if li==len(L)-1: 
+                k_out = 4 
             linear = torch.nn.Linear(k_in,k_out)
 
             self.initialize_weights(linear,out="small" if li==len(L)-1 else "all")

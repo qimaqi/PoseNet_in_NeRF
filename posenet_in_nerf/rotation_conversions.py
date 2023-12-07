@@ -1,3 +1,4 @@
+# pylint: disable=E741
 # Copyright (c) Meta Platforms, Inc. and affiliates.
 # All rights reserved.
 #
@@ -8,7 +9,7 @@ from typing import Optional
 
 import torch
 import torch.nn.functional as F
-
+import numpy as np
 
 """
 The transformation matrices returned from the functions in this file assume
